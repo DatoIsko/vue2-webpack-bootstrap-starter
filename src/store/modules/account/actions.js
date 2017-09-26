@@ -25,12 +25,12 @@ export const find = ({ commit }) => {
   const account = {
     first_name: 'John',
     last_name: 'Doe',
-    email: 'jonh@doe.com',
+    email: 'jonh@doe.com'
   };
 
   commit(types.FIND, Transformer.fetch(account));
 };
 
 export default {
-  find,
+  find
 };

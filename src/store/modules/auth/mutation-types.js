@@ -15,5 +15,5 @@ export default {
   CHECK,
   REGISTER,
   LOGIN,
-  LOGOUT,
+  LOGOUT
 };

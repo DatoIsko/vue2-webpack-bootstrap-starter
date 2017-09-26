@@ -4,7 +4,7 @@ module.exports = {
     'autoprefixer'
   ],
   map: {
-    inline: false,
+    inline: true,
     annotation: true,
     sourcesContent: true
   },

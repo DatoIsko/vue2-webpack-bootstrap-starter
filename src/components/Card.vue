@@ -43,7 +43,7 @@
      * The mixins that the component can use.
      */
     mixins: [
-      SlotMixin,
+      SlotMixin
     ],
 
     /**
@@ -52,8 +52,8 @@
     props: {
       contextualStyle: {
         type: String,
-        required: false,
-      },
+        required: false
+      }
     },
 
     /**
@@ -77,7 +77,7 @@
         }
 
         return classNames;
-      },
-    },
+      }
+    }
   };
 </script>

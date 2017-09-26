@@ -1,0 +1,30 @@
+//@import "var";
+//@import "mixins";
+
+.btn-rounded {
+  border-radius: 20px !important;
+  border: 0;
+  font-size: 14px;
+  padding: .3rem 1.1rem !important;
+}
+
+.page-item{
+  &:focus {
+    outline: none;
+  }
+  &.page-link:focus{
+    outline: none;
+  }
+}
+
+:focus {
+  outline: none !important;
+}
+
+
+@include bg-variant('.bg-dark-blue', $dark-blue);
+@include bg-variant('.bg-white', $white);
+@include bg-variant('.bg-light-grey', $gray-lighter);
+@include bg-variant('.bg-green', $green);
+//@include bg-variant('.bg-grey-lighter', $gray-lighter);
+

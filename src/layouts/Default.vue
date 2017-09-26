@@ -5,7 +5,7 @@
         class="navbar-brand"
         :to="{ name: 'home.index' }"
       >
-        Vue 2 Boilerplate
+        Vue
       </router-link>
 
       <button
@@ -100,7 +100,7 @@
      */
     data() {
       return {
-        menuCollapsed: false,
+        menuCollapsed: false
       };
     },
 
@@ -112,6 +112,12 @@
        * Will log the user out.
        */
       logout() {
+        this.$notify({
+          type: 'success',
+          title: 'Success',
+          text: 'Successfully logout',
+          duration: 2000
+        });
         this.$store.dispatch('auth/logout');
       },
 
@@ -120,7 +126,7 @@
        */
       toggleMenu() {
         this.menuCollapsed = !this.menuCollapsed;
-      },
-    },
+      }
+    }
   };
 </script>

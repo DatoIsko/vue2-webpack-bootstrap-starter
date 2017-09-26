@@ -24,6 +24,6 @@
     /**
      * The name of the layout.
      */
-    name: 'minimal-layout',
+    name: 'minimal-layout'
   };
 </script>

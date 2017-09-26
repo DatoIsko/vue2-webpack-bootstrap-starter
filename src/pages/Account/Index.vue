@@ -63,7 +63,7 @@
      */
     components: {
       VLayout,
-      VCard,
-    },
+      VCard
+    }
   };
 </script>

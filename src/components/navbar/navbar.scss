@@ -1,0 +1,70 @@
+@import "../../assets/styles/common/var";
+@import "../../assets/styles/common/mixins";
+.fomo-navbar {
+  position: relative;
+  z-index: 1000;
+  font-family: "OpenSans-Semibold", sans-serif;
+  .collapse.navbar-collapse{
+    align-items: center;
+  }
+  nav {
+    .container {
+      margin-top: 0;
+      font-size: 14px;
+      .navbar-brand {
+        img {
+          height: 40px;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: #FFF;
+          }
+        }
+      }
+      .login-user{
+        margin-left: 20px;
+        position: relative;
+        img{
+          width: 40px;
+          height: 40px;
+        }
+        .dropdown-menu {
+          left: auto;
+          right: 0;
+          background-color: #9ad6ed;
+
+          //&:before {
+          //  content: ' ';
+          //  top: 0;
+          //  position: absolute;
+          //  right: 18px;
+          //  width: 20px;
+          //  height: 20px;
+          //  background-color: red;
+          //}
+          .dropdown-item {
+            cursor: pointer;
+            color: #FFF;
+            &:hover,
+            &:active,
+            &.active {
+              color: #425065;
+            }
+
+          }
+        }
+        .dropdown-toggle {
+          cursor: pointer;
+          color: #FFF;
+        }
+      }
+      .search-input{
+        display: none;
+        @include transition(.5s ease-out);
+      }
+    }
+  }
+
+}

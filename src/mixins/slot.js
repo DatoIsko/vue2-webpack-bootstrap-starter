@@ -21,6 +21,6 @@ export default {
      */
     hasSlot(slotName = 'default') {
       return !!this.$slots[slotName];
-    },
-  },
+    }
+  }
 };

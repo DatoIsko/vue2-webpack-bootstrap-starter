@@ -36,5 +36,5 @@ export default {
     state.authenticated = false;
     localStorage.removeItem('id_token');
     Vue.$http.defaults.headers.common.Authorization = '';
-  },
+  }
 };

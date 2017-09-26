@@ -30,10 +30,6 @@
             href="http://github.com/petervmeijgaard"
             target="_blank"
           >
-            <i
-              class="fa fa-github fa-fw"
-              aria-hidden="true"
-            ></i>
             <span class="pl-2">
               GitHub
             </span>
@@ -92,7 +88,7 @@
      */
     components: {
       VLayout,
-      VCard,
-    },
+      VCard
+    }
   };
 </script>

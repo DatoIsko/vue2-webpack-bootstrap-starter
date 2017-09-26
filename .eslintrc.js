@@ -27,6 +27,9 @@ module.exports = {
     'no-param-reassign': 0,
     'no-multi-assign': 0,
 
+    // 'off' | 'warn | 'error'
+    'comma-dangle': ['off', 'never'],
+
     // don't require .vue extension when importing
     'import/extensions': ['error', 'always', {
       'js': 'never',

@@ -4,13 +4,17 @@
  *
  * The routes and redirects are defined in this file.
  */
+import Home from '@/pages/Home/Index';
+import Account from '@/pages/Account/Index';
+import Login from '@/pages/Login/Index';
+import Register from '@/pages/Register/Index';
 
 export default [
   // Home
   {
     path: '/home',
     name: 'home.index',
-    component: () => import('@/pages/Home/Index'),
+    component: Home,
 
     // If the user needs to be authenticated to view this page
     meta: {
@@ -22,7 +26,7 @@ export default [
   {
     path: '/account',
     name: 'account.index',
-    component: () => import('@/pages/Account/Index'),
+    component: Account,
 
     // If the user needs to be authenticated to view this page.
     meta: {
@@ -34,7 +38,7 @@ export default [
   {
     path: '/login',
     name: 'login.index',
-    component: () => import('@/pages/Login/Index'),
+    component: Login,
 
     // If the user needs to be a guest to view this page.
     meta: {
@@ -46,7 +50,7 @@ export default [
   {
     path: '/register',
     name: 'register.index',
-    component: () => import('@/pages/Register/Index.vue'),
+    component: Register,
 
     // If the user needs to be a guest to view this page.
     meta: {

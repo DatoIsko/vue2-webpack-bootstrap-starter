@@ -6,5 +6,5 @@
  */
 
 export default {
-  authenticated: false,
+  authenticated: false
 };

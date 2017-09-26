@@ -1,0 +1,92 @@
+<footer>
+  <div class="section-with-bg">
+    <div class="bg-green p-y-60 newsletter">
+      <div class="container">
+        <div class="row subscribe-row color-white">
+          <div class="col-md-3 subscribe-label text-right">Newsletter</div>
+          <div class="col-md-5">
+            <form>
+              <div class="input-group rounded">
+                <input type="email"
+                       name="email"
+                       readonly="readonly"
+                       class="form-control btn-rounded border-0 bg-transparent"
+                       placeholder="your email">
+                <span class="input-group-btn">
+                  <router-link to="/subscriptions" tag="button" class="btn btn-green btn-rounded"><span>Subscribe</span></router-link>
+                </span>
+              </div>
+              <p v-if="errors.has('email')" class="text-left color-red small">{{errors.first('email')}}</p>
+            </form>
+          </div>
+          <div class="col-md-4"><small>We promise to never spam you.</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="container-fluid">
+      <div class="row footer-top">
+        <div class="col-md-2 p-0">
+          <router-link to="/">
+            <img src="../../assets/img/logo-footer.png" alt="" class="footer-logo">
+          </router-link>
+        </div>
+        <div class="col-md-10 p-0 footer-menu">
+          <ul class="pull-right list-unstyled m-b-0">
+            <router-link to="/packages" tag="li">
+              <a>Packages</a>
+            </router-link>
+            <router-link to="/benefits" tag="li">
+              <a>Benefits</a>
+            </router-link>
+            <router-link to="/how-it-works" tag="li">
+              <a>How it works</a>
+            </router-link>
+            <router-link to="/custom-package" tag="li">
+              <a>Custom Package</a>
+            </router-link>
+            <router-link to="/faqs" tag="li">
+              <a>FAQs</a>
+            </router-link>
+            <router-link to="/blog" tag="li">
+              <a>Blog</a>
+            </router-link>
+            <router-link to="/contact-us" tag="li">
+              <a>Contact Us</a>
+            </router-link>
+          </ul>
+        </div>
+      </div>
+      <div class="row footer-bottom">
+        <div class="col-md-4 p-0">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 p-l-0-xs p-r-0-xs">
+              <ul class="list-unstyled m-b-0 social-links">
+                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-sm-12 col-md-12 p-l-0-xs p-r-0-xs">
+              <span class="copyright">Copyright © 2017. Fomo Group. Developed by</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-8 p-0">
+          <div class="row customer-support">
+            <div class="col-sm-12 col-md-12 col-lg-5 ml-lg-auto text-right text-xs-left p-l-0-xs p-r-0-xs">
+              <span class="text-uppercase color-dark-blue">customer support</span>
+              <span class="color-light-blue">021 424 8866</span>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4 text-right text-xs-left p-l-0-xs p-r-0-xs">
+              <i class="fa fa-envelope-o color-dark-blue m-r-5 f-s-16" aria-hidden="true"></i>
+              <span class="color-light-blue">info@fomotravel.co.za</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

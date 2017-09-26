@@ -1,0 +1,56 @@
+<div class="fomo-navbar">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark-blue">
+    <div class="container">
+      <router-link to="/" class="navbar-brand" exact>
+        <img src="./../../assets/img/logo.png" alt="logo">
+      </router-link>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <router-link to="/packages" tag="li" class="nav-item" exact>
+            <a class="nav-link">Packages <span class="sr-only">(current)</span></a>
+          </router-link>
+          <router-link to="/benefits" tag="li" class="nav-item" exact>
+            <a class="nav-link">Benefits</a>
+          </router-link>
+          <router-link to="/how-it-works" tag="li" class="nav-item" exact>
+            <a class="nav-link">How it works</a>
+          </router-link>
+          <router-link to="/custom-package" tag="li" class="nav-item" exact>
+            <a class="nav-link">Custom Package</a>
+          </router-link>
+          <router-link to="/faqs" tag="li" class="nav-item" exact>
+            <a class="nav-link">FAQs</a>
+          </router-link>
+          <router-link to="/blog" tag="li" class="nav-item" exact>
+            <a class="nav-link">Blog</a>
+          </router-link>
+          <router-link to="/contact-us" tag="li" class="nav-item" exact>
+            <a class="nav-link">Contact Us</a>
+          </router-link>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2 search-input rounded" id="searchInput" type="text" placeholder="Search" aria-label="Search">
+          <button class="my-2 my-sm-0 mr-2 bg-transparent border-0 color-white btn-search" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </form>
+        <router-link to="/auth" tag="button" class="btn btn-rounded my-2 my-sm-0 btn-red" v-if="!isAuth">
+          Sign In
+        </router-link>
+        <button class="btn btn-rounded my-2 my-sm-0 bg-cyan color-white" @click="logout" v-if="isAuth"> Sign Out</button>
+        <div class="login-user" v-if="isAuth">
+          <a id="userDropdown" class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <img src="./../../assets/img/user.png" alt="user" >
+          </a>
+          <div class="dropdown-menu" aria-labelledby="userDropdown">
+            <router-link to="/wish-list" class="dropdown-item">
+              <span>Wish List</span>
+            </router-link>
+            <a href="#" class="dropdown-item" @click.prevent="logout">Log Out</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

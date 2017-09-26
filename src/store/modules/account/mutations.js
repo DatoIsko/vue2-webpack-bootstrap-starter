@@ -13,5 +13,5 @@ export default {
     state.email = account.email;
     state.firstName = account.firstName;
     state.lastName = account.lastName;
-  },
+  }
 };

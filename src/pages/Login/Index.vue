@@ -73,8 +73,8 @@
       return {
         user: {
           email: null,
-          password: null,
-        },
+          password: null
+        }
       };
     },
 
@@ -89,7 +89,7 @@
        */
       login(user) {
         this.$store.dispatch('auth/login', user);
-      },
+      }
     },
 
     /**
@@ -97,7 +97,7 @@
      */
     components: {
       VLayout,
-      VCard,
-    },
+      VCard
+    }
   };
 </script>

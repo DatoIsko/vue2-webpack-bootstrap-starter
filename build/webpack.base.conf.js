@@ -4,7 +4,6 @@ const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
 
-const autoprefixer = require('autoprefixer');
 const webpack = require('webpack')
 
 function resolve(dir) {
@@ -103,9 +102,6 @@ module.exports = {
       Scrollspy: "exports-loader?Scrollspy!bootstrap/js/dist/scrollspy",
       Tab: "exports-loader?Tab!bootstrap/js/dist/tab",
       Util: "exports-loader?Util!bootstrap/js/dist/util"
-    }),
-    new webpack.LoaderOptionsPlugin({
-      postcss: [autoprefixer],
     }),
   ]
 }

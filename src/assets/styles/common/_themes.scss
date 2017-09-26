@@ -1,0 +1,42 @@
+@import "./var";
+@import "./mixins";
+
+.color-white{
+  color: white !important;
+}
+.color-red{
+  color: $red;
+}
+.bg-cyan{
+  background-color: $cyan;
+}
+.bg-light-blue{
+  background-color: $light-blue;
+}
+.bg-dark-blue{
+  background-color: $dark-blue;
+}
+.bg-darker-blue{
+  background-color: $darker-blue;
+}
+.bg-red{
+  background-color: $red;
+}
+.bg-white{
+  background-color: #FFF;
+}
+.bg-transparent{
+  background-color: transparent !important;
+}
+.color-cyan{
+  color: $cyan;
+}
+.color-light-blue{
+  color: $light-blue;
+}
+.color-dark-blue{
+  color: $dark-blue;
+}
+.color-darker-blue{
+  color: $darker-blue;
+}

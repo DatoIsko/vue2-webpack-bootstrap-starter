@@ -19,24 +19,8 @@ import './plugins/axios';
 import { i18n } from './plugins/vue-i18n';
 import { router } from './plugins/vue-router';
 import './plugins/vuex-router-sync';
-
-/* ============
- * Styling
- * ============
- *
- * Import the application styling.
- * Stylus is used for this boilerplate.
- *
- * If you don't want to use Stylus, that's fine!
- * Replace the stylus directory with the CSS preprocessor you want.
- * Import the entry point here & install the webpack loader.
- *
- * It's that easy...
- *
- * http://stylus-lang.com/
- */
-
-import './assets/stylus/app.styl';
+import './plugins/vee-validate';
+import './plugins/vue-notification';
 
 /* ============
  * Main App
